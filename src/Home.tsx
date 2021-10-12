@@ -180,6 +180,8 @@ const Home = (props: HomeProps) => {
       {wallet && <p>Remaining: {itemsRemaining}</p>}
 
       <MintContainer>
+        <div className="App">
+          <span className="heading">Crypto Glee Club </span>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>
         ) : (
@@ -205,7 +207,7 @@ const Home = (props: HomeProps) => {
               />
             )}
           </MintButton>
-        )}
+        )} </div>
       </MintContainer>
 
       <Snackbar
